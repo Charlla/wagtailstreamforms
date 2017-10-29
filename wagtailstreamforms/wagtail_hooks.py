@@ -95,7 +95,7 @@ class RegexFieldValidatorModelAdmin(ModelAdmin):
 def register_admin_urls():
     from wagtailstreamforms import urls
     return [
-        url(r'^wagtailstreamforms/', include((urls, 'wagtailstreamforms'))),
+        url(r'^wagtailstreamforms/', include(urls, namespace='wagtailstreamforms')),
     ]
 
 
